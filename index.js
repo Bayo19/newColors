@@ -9,10 +9,14 @@ function getRandomColor() {
 
 const colors = ['red'];
 
+setTimeout(function() {
+    const h2 = document.querySelector('h2');
+    h2.innerHTML += ' - doubleclick any box to copy rgb color code';
+}, 3000);
 
 const otherBox = function() {
     let boxa = document.createElement('div');
-    boxa.style.backgroundColor += getRandomColor();
+    boxa.style.backgroundColor = getRandomColor();
     boxa.classList.add('boxa');
     container.appendChild(boxa);
     boxa.addEventListener('mouseover', function() {
