@@ -30,3 +30,8 @@ h1 {
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #555;
 }
+
+h2 {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
