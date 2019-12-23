@@ -1,18 +1,12 @@
 function getRandomColor() {
-    // var letters = '0123456789ABCDEF';
-    // var color = '#';
-    // for (var i = 0; i < 6; i++) {
-    //     color += letters[Math.floor(Math.random() * 16)];
-    // }
-    // return color;
     let r = Math.floor(Math.random() * 255) + 1;
-    let g = Math.floor(Math.random() * 255) + 1;
+    let g = Math.floor(Math.random() * 255);
     let b = Math.floor(Math.random() * 255) + 1;
 
     function rand(min, max) {
         return min + Math.random() * (max - min);
     }
-    let a = rand(0.25, 0.95).toFixed(2);
+    let a = rand(0.2, 0.99).toFixed(2);
     color = `rgba(${r},${g},${b},${a})`;
     return color;
 
