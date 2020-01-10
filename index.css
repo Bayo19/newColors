@@ -11,6 +11,10 @@
     /* IE10+ */
 }
 
+body {
+    padding: 5%;
+}
+
 .box {
     width: 100px;
     height: 60px;
