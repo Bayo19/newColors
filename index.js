@@ -1,7 +1,7 @@
 function getRandomColor() {
-    let r = Math.floor(Math.random() * 255) + 1;
-    let g = Math.floor(Math.random() * 255);
-    let b = Math.floor(Math.random() * 255) + 1;
+    let r = Math.floor(Math.random() * 255) + 1
+    let g = Math.floor(Math.random() * 255) + 1
+    let b = Math.floor(Math.random() * 255) + 1
 
     function rand(min, max) {
         return min + Math.random() * (max - min);
