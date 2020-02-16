@@ -29,14 +29,14 @@ const otherBox = function() {
         h1.innerHTML = boxa.style.backgroundColor;
         h1.style.color = boxa.style.backgroundColor;
     })
-    boxa.addEventListener('dblclick', async event => {
+    boxa.addEventListener('dblclick', async function(e) {
         if (!navigator.clipboard) {
             return
         }
         const h1 = document.querySelector('h1');
         try {
             await navigator.clipboard.writeText(h1.innerHTML)
-            event.target.textContent = 'Copied to clipboard'
+            e.target.textContent = 'Copied to clipboard'
         } catch (err) {
             console.error('Failed to copy!', err)
         }
