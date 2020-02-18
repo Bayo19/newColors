@@ -46,13 +46,12 @@ const otherBox = function() {
 
 
 
-const container = document.querySelector('#boxes');
+const container = document.querySelector('#boxes')
 
 for (let color of colors) {
-    let box = document.createElement('div');
+    let box = document.createElement('div')
     box.style.backgroundColor = color;
-    box.classList.add('box');
-    container.appendChild(box);
-    box.addEventListener('click', otherBox);
-
+    box.classList.add('box')
+    container.appendChild(box)
+    box.addEventListener('click', otherBox)
 }
